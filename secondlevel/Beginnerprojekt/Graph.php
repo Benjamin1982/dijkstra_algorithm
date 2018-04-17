@@ -48,11 +48,11 @@ class Graph
     public function testFunction($t)
     {
     echo "Aufbau des Graphen ...";
-            $this->addNode('Labello0 ');
-            $this->addNode('Labello1');
-            $this->addNode('Labello2');
-            $this->addNode('Labello3');
-            $this->addNode('Labello4');
+            $this->addNode('');
+            $this->addNode('');
+            $this->addNode('');
+            $this->addNode('');
+            $this->addNode('');
     }
     /**
     * Neuen Knoten anlegen
