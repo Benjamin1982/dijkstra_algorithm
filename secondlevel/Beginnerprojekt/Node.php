@@ -2,6 +2,7 @@
 require_once('Edge.php');
 class Node
 {
+    // string type
     private $label;
     private $outgoingEdges = []; // Ausgehende Kanten auf Nachbarsknoten
     
