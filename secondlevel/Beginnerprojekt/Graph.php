@@ -28,7 +28,7 @@ class Graph
         unset ($this->nodes[0]);
         unset ($this->nodes[1]);
         unset ($this->nodes[2]);
-        $this->addNode('Labello');
+       
         
         foreach ($this->nodes as $node)
             echo $node->getLabel()."\n"; 
@@ -44,8 +44,7 @@ class Graph
     
     public function testFunction($t)
     {
-        echo "gruene Ideen schlafen gestern heftig!\n";
-        echo "Alice und Bob interessiert das alles nicht!\n";
+            $this->addNode('Labello');
     }
     /**
     * Neuen Knoten anlegen

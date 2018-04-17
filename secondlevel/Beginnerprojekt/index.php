@@ -7,4 +7,4 @@ echo"  Testdatum: ".date('h:i:s');
 
 
 $graph = new Graph(1);
-$graph->testFunction(2);
+$graph->testFunction(16); // initialsiert den Graph mit Nodes 
