@@ -47,7 +47,11 @@ class Graph
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->addNode('Labello');
+=======
+        echo "gruene Ideen schlafen heftig!";
+>>>>>>> parent of 368cfa7... Alice und Bob
 =======
         echo "gruene Ideen schlafen heftig!";
 >>>>>>> parent of 368cfa7... Alice und Bob
