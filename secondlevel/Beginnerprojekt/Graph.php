@@ -44,7 +44,11 @@ class Graph
     
     public function testFunction($t)
     {
+<<<<<<< HEAD
             $this->addNode('Labello');
+=======
+        echo "gruene Ideen schlafen heftig!";
+>>>>>>> parent of 368cfa7... Alice und Bob
     }
     /**
     * Neuen Knoten anlegen
