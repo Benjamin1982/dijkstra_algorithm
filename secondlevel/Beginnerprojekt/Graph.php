@@ -44,7 +44,8 @@ class Graph
     
     public function testFunction($t)
     {
-        echo "gruene Ideen schlafen heftig!";
+        echo "gruene Ideen schlafen gestern heftig!\n";
+        echo "Alice und Bob interessiert das alles nicht!\n";
     }
     /**
     * Neuen Knoten anlegen
