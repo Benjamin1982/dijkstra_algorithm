@@ -10,10 +10,11 @@ class Graph
 {
     private $nodes = array();
     private $BED= false;
+    private  $num=0;
     
     function initPushAndPop()
     {
-        echo "  Aufruf Funktion / Call to function [initPushAndPop]";
+        echo " Aufruf der Funktion / Call to function [initPushAndPop]";
         if($this->BED){ echo "\nProzedur abgebrochen!";
             return;
         }
@@ -36,31 +37,22 @@ class Graph
     
     function __construct( $lab )
     {
+        echo "\nEin Graph mit Index-Nr. = ".$lab." wird erzeugt.\n";
         $this->initPushAndPop( );
         
-        //
+        //zahl sichern:
+        $this->num = $lab;
     }
     
     
     public function testFunction($t)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $this->addNode('Labello');
-=======
-        echo "gruene Ideen schlafen heftig!";
->>>>>>> parent of 368cfa7... Alice und Bob
-=======
-        echo "gruene Ideen schlafen heftig!";
->>>>>>> parent of 368cfa7... Alice und Bob
-=======
-        echo "gruene Ideen schlafen heftig!";
->>>>>>> parent of 368cfa7... Alice und Bob
-=======
-        echo "gruene Ideen schlafen heftig!";
->>>>>>> parent of 368cfa7... Alice und Bob
+    echo "Aufbau des Graphen ...";
+            $this->addNode('Labello0 ');
+            $this->addNode('Labello1');
+            $this->addNode('Labello2');
+            $this->addNode('Labello3');
+            $this->addNode('Labello4');
     }
     /**
     * Neuen Knoten anlegen
@@ -69,9 +61,16 @@ class Graph
     */
     public function addNode($label)
     {
+        if($this->num  == 1)
+           print_r( "\nx=================================");
         $this->nodes[$label] = new Node($label);
+        $out=$this->nodes[$label]->getLabel( );
+        print_r( "           \nneuer  Knoten hinzugefügt: ".$out);
+        $this->num++;
+        if($this->num == 6)
+        print_r( "\ny=================================\n");
     }
-
+    
     /**
      * Neue Kante anlegen.
      * @param string $startLabel eindeutige ID des Startknotens
@@ -79,16 +78,10 @@ class Graph
      * @param number $cost >= 0 Kosten (Gewicht)
      * @throws Exception Wenn Start- oder Zielknoten nicht zuvor mittels addNode definiert wurden.
      */
-    /*
+   
     public function addEdge($startLabel, $destinationLabel, $cost)
     {
         // Auto fährt am Tag x geradeaus los ....
-        try {
-            
-        }
-        catch(Exception i)
-        {
-            
-        }
-    }*/
+       
+    }
 }
